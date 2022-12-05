@@ -1,5 +1,5 @@
 {
-  "name": "matlab-code-run",
+  "name": "matlab-vscode-run",
   "displayName": "Matlab Code Run",
   "description": "Enables code execution in VS Code via integrated terminal",
   "version": "1.0.1",
@@ -15,7 +15,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onLanguage:matlab"
+    "onLanguage:matlab",
+    "onCommand:extension.openMyExtension",
+    "onCommand:extension.useMyExtension"
   ],
   "main": "./out/extension.js",
   "contributes": {
